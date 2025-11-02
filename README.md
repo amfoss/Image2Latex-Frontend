@@ -20,7 +20,6 @@ It connects to a Flask backend API that performs OCR → LaTeX conversion.
 | Styling | TailwindCSS + PostCSS |
 | API Communication | Axios |
 | File Handling | react-dropzone |
-| Backend (expected) | Flask / FastAPI at `http://127.0.0.1:5000/convert` |
 
 ---
 
