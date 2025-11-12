@@ -138,7 +138,6 @@ export default function App() {
         </div>
       </div>
 
-      {/* Add CSS pattern */}
       <style>{`
         .grid-pattern::before {
           content: "";
