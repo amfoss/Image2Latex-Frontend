@@ -22,12 +22,10 @@ export default function App() {
     setLatex("");
 
     const formData = new FormData();
-    formData.append("file", file);
+    formData.append("image", file);
 
     try {
-      const res = await axios.post("http://127.0.0.1:5000/convert", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      const res = await axios.post("https://latex-api.amfoss.in/api/convert", formData);
       setLatex(res.data.latex || "No LaTeX output received.");
     } catch (err) {
       console.error(err);
@@ -89,7 +87,7 @@ export default function App() {
           </button>
         </div>
 
-        {/* Output */}
+        {/* Output */}  
         <div className="text-left mt-8">
           <h2 className="font-semibold mb-2">LaTeX Output:</h2>
 
