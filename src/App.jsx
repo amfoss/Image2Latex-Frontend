@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import axios from "axios";
+import logo from "./Assets/logo_white.svg";
 
 export default function App() {
   const [file, setFile] = useState(null);
@@ -116,6 +117,39 @@ export default function App() {
           z-index: 0;
         }
       `}</style>
+      <footer className="absolute bottom-4 flex items-center gap-3 text-sm text-gray-400 z-10">
+
+        <span>
+          Made with <span className="text-red-500">♥</span> by{" "}
+          <a
+            href="https://amfoss.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-gray-200"
+          >
+            amFOSS
+          </a>
+        </span>
+
+        <span className="text-gray-600">•</span>
+
+        <a
+          href="https://github.com/amfoss/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-gray-200"
+        >
+          GitHub
+        </a>
+      </footer>   
+      <header>
+        <img
+          src={logo}
+          alt="amFOSS logo"
+          className="fixed top-6 left-6 z-20"
+          width={170}
+        />
+      </header>   
     </div>
   );
 }
