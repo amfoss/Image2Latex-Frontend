@@ -143,12 +143,14 @@ export default function App() {
         </a>
       </footer>   
       <header>
+        <a href="https://amfoss.in/">
         <img
           src={logo}
           alt="amFOSS logo"
           className="fixed top-6 left-6 z-20"
           width={170}
         />
+        </a>
       </header>   
     </div>
   );
