@@ -38,7 +38,7 @@ npm install
 ```bash
 npm start
 ```
-##🤝 Contributing
+## 🤝 Contributing
 ```
 Fork this repository and clone your forked repository
 ```
