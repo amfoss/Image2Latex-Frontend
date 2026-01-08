@@ -82,7 +82,7 @@ export default function App() {
                 : "border-gray-600 hover:border-gray-500 bg-[#1B1B1B]"
             }`}
           >
-            <input {...getInputProps()} ref={inputRef} />
+            <input {...getInputProps()} />
             {file ? (
               <p className="text-gray-300">{file.name}</p>
             ) : (
