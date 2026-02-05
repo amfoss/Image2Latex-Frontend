@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Image2Latex",
+  "name": "Image2Latex - Image to Latex code converter",
   "icons": [
     {
       "src": "favicon.ico",
